@@ -40,7 +40,7 @@ p{margin:0}
 .bg-\[\#44c3ac\]{background-color:#44c3ac}
 .bg-\[\#3076b1\]{background-color:#3076b1}
 .bg-\[\#8cc63f\]{background-color:#8cc63f}
-.bg-white{background-color:#fff}
+.bg-transparent{background-color:transparent}.bg-white{background-color:#fff}
 .bg-gray-50{background-color:#f9fafb}
 .bg-gray-100{background-color:#f3f4f6}
 .bg-gray-800{background-color:#1f2937}
@@ -123,7 +123,7 @@ p{margin:0}
 .cursor-pointer{cursor:pointer}
 .aspect-video{aspect-ratio:16/9}
 .aspect-\[4\/3\]{aspect-ratio:4/3}
-.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l-4{border-left-width:4px}
+.border{border-width:1px}.border-0{border-width:0}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l-4{border-left-width:4px}
 .focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
 .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
 .grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -186,14 +186,14 @@ p{margin:0}
 <img alt="Vert Housing Logo" width="80" height="80" class="w-16 h-16 sm:w-20 sm:h-20" src="https://vert-storage.fastautoai.com/logo.svg"/>
 </a>
 <div class="hidden md:flex space-x-6 lg:space-x-8">
-<button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" class="text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">About</button>
-<button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" class="text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">Services</button>
-<button onclick="document.getElementById('takealook').scrollIntoView({behavior:'smooth'})" class="text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">Take a Look</button>
+<button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" class="bg-transparent border-0 text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">About</button>
+<button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" class="bg-transparent border-0 text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">Services</button>
+<button onclick="document.getElementById('takealook').scrollIntoView({behavior:'smooth'})" class="bg-transparent border-0 text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">Take a Look</button>
 <a href="/gallery" class="text-gray-700 hover:text-[#44c3ac] transition-colors text-sm lg:text-base">Gallery</a>
-<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">Contact</button>
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="bg-transparent border-0 text-gray-700 hover:text-[#44c3ac] transition-colors cursor-pointer text-sm lg:text-base">Contact</button>
 </div>
 <div class="md:hidden">
-<button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-[#44c3ac] transition-colors">
+<button onclick="toggleMobileMenu()" class="bg-transparent border-0 text-gray-700 hover:text-[#44c3ac] transition-colors">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
 </button>
 </div>
@@ -201,11 +201,11 @@ p{margin:0}
 </div>
 <div id="mobileMenu" class="md:hidden hidden bg-white border-b border-gray-200">
 <div class="px-4 py-4 space-y-3">
-<button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">About</button>
-<button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">Services</button>
-<button onclick="document.getElementById('takealook').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">Take a Look</button>
+<button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="bg-transparent border-0 block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">About</button>
+<button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="bg-transparent border-0 block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">Services</button>
+<button onclick="document.getElementById('takealook').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="bg-transparent border-0 block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">Take a Look</button>
 <a href="/gallery" class="block text-gray-700 hover:text-[#44c3ac] transition-colors py-2 text-sm">Gallery</a>
-<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">Contact</button>
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});toggleMobileMenu()" class="bg-transparent border-0 block text-gray-700 hover:text-[#44c3ac] transition-colors w-full text-left py-2 text-sm">Contact</button>
 </div>
 </div>
 </nav>
@@ -368,125 +368,7 @@ Empowering Living for Adults with Autism and Learning Disabilities We are a non-
 <div class="w-16 sm:w-20 md:w-24 h-1 bg-[#44c3ac] mx-auto mb-4 sm:mb-6"></div>
 <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Explore our work and see the difference we make in the lives of those we support</p>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('76WFx02v4AM')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/76WFx02v4AM/maxresdefault.jpg" alt="Welcome to Vert Housing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Welcome to Vert Housing</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('PxhQmayBbLg')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/PxhQmayBbLg/maxresdefault.jpg" alt="Our Support Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Our Support Services</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('v_VlLIKfTuQ')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/v_VlLIKfTuQ/maxresdefault.jpg" alt="Community Living" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Community Living</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('INbIuPfttYY')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/INbIuPfttYY/maxresdefault.jpg" alt="Making a Difference" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Making a Difference</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('_Z1VHyeI_rU')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/_Z1VHyeI_rU/maxresdefault.jpg" alt="Our Facilities" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Our Facilities</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('WgYDvQFAwLo')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/WgYDvQFAwLo/maxresdefault.jpg" alt="Resident Stories" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Resident Stories</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('65vKsEbMLpc')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/65vKsEbMLpc/maxresdefault.jpg" alt="Support & Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Support & Care</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer" onclick="openVideo('Yo7xPnN42Ao')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/Yo7xPnN42Ao/maxresdefault.jpg" alt="Vert Housing Overview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Vert Housing Overview</p>
-</div>
-</div>
-<div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer sm:col-span-2" onclick="openVideo('bGu5OOfbbqw')">
-<div class="aspect-video w-full bg-gray-100 overflow-hidden">
-<img src="https://img.youtube.com/vi/bGu5OOfbbqw/maxresdefault.jpg" alt="Our Mission" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
-</div>
-<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#44c3ac"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-<p class="text-white font-semibold text-base sm:text-lg">Our Mission</p>
-</div>
-</div>
-</div>
+<div id="youtubeGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8"></div>
 </div>
 </section>
 
@@ -637,136 +519,156 @@ Empowering Living for Adults with Autism and Learning Disabilities We are a non-
 <div class="text-center mb-12 sm:mb-16">
 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Resources &amp; Guides</h2>
 <div class="w-16 sm:w-20 md:w-24 h-1 bg-[#44c3ac] mx-auto mb-4 sm:mb-6"></div>
-<p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Download our helpful guides and resources for tenants covering safety, maintenance, and living in your home.</p>
+<p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto px-4">Download our helpful guides and resources for tenants covering safety, maintenance, and living in your home.</p>
 </div>
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/using_the_kitchen_safely.webp" alt="Using the kitchen safely" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Using the kitchen safely preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/using_the_kitchen_safely.webp"/>
 </div>
 <div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Using the kitchen safely</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Essential safety guidelines for using kitchen appliances and preparing food safely.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/using_the_kitchen_safely.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/using_the_kitchen_safely.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Using the kitchen safely</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Essential safety guidelines for using kitchen appliances and preparing food safely.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/using_the_kitchen_safely.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/using_the_kitchen_safely.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
 </div>
 </div>
 </div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/fire_safety_in_your_home.webp" alt="Fire Safety in your home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
-<div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Fire Safety in your home</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Important fire prevention and emergency procedures for your safety.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/fire_safety_in_your_home.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/fire_safety_in_your_home.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/water_safety_legionella.webp" alt="Water Safety & Legionella" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Fire Safety in your home preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/fire_safety_in_your_home.webp"/>
 </div>
 <div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Water Safety &amp; Legionella</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Guidelines for water safety and preventing Legionella bacteria.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/water_safety_legionella.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/water_safety_legionella.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Fire Safety in your home</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Important fire prevention and emergency procedures for your safety.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/fire_safety_in_your_home.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/fire_safety_in_your_home.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
 </div>
 </div>
 </div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/vert_housing_maintenance_and_repairs.webp" alt="Vert Housing Maintenance and Repairs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
-<div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Vert Housing Maintenance and Repairs</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">How to report maintenance issues and what to expect from our repair service.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/vert_housing_maintenance_and_repairs.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/vert_housing_maintenance_and_repairs.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/renting_your_home.webp" alt="Renting your home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Water Safety &amp; Legionella preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/water_safety_legionella.webp"/>
 </div>
 <div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Renting your home</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Your rights and responsibilities as a Vert Housing tenant.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/renting_your_home.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/renting_your_home.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Water Safety &amp; Legionella</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Guidelines for water safety and preventing Legionella bacteria.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/water_safety_legionella.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/water_safety_legionella.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
 </div>
 </div>
 </div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/electrical_safety_in_your_home.webp" alt="Electrical Safety in Your Home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
-<div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Electrical Safety in Your Home</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Safe use of electrical appliances and electrical systems in your home.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/electrical_safety_in_your_home.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/electrical_safety_in_your_home.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/gas_safety_guidance_for_vert_housing_tenants.webp" alt="Gas Safety Guidance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Vert Housing Maintenance and Repairs preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/vert_housing_maintenance_and_repairs.webp"/>
 </div>
 <div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Gas Safety Guidance for Vert Housing Tenants</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Important gas safety information and emergency procedures.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/gas_safety_guidance_for_vert_housing_tenants.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/gas_safety_guidance_for_vert_housing_tenants.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Vert Housing Maintenance and Repairs</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">How to report maintenance issues and what to expect from our repair service.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/vert_housing_maintenance_and_repairs.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/vert_housing_maintenance_and_repairs.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
 </div>
 </div>
 </div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/living_with_a_disability.webp" alt="Living with a disability" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
-<div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Living with a disability</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Living with a disability and how to support yourself.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/living_with_a_disability.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/living_with_a_disability.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/descaling_taps_and_shower_heads.webp" alt="Descaling Taps and Shower Heads" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Renting your home preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/renting_your_home.webp"/>
 </div>
 <div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Descaling Taps and Shower Heads</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">Step-by-step guide to descaling and maintaining your taps and shower heads.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/descaling_taps_and_shower_heads.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/descaling_taps_and_shower_heads.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Renting your home</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Your rights and responsibilities as a Vert Housing tenant.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/renting_your_home.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/renting_your_home.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
 </div>
 </div>
 </div>
-<div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-<div class="aspect-[4/3] overflow-hidden">
-<img src="https://vert-storage.fastautoai.com/thumbnails/understanding_condensation_and_black_mould.webp" alt="Understanding Condensation and Black Mould" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+</div>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Electrical Safety in Your Home preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/electrical_safety_in_your_home.webp"/>
 </div>
 <div class="p-4 sm:p-6">
-<h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Understanding Condensation and Black Mould</h3>
-<p class="text-gray-500 text-xs sm:text-sm mb-4">How to prevent and deal with condensation and black mould in your home.</p>
-<div class="flex justify-between items-center">
-<a href="https://vert-storage.fastautoai.com/booklets/understanding_condensation_and_black_mould.pdf" target="_blank" class="text-xs sm:text-sm text-gray-700 font-medium hover:text-[#44c3ac] transition-colors">View Full PDF</a>
-<a href="https://vert-storage.fastautoai.com/booklets/understanding_condensation_and_black_mould.pdf" target="_blank" class="text-xs sm:text-sm bg-[#44c3ac] text-white px-4 py-2 rounded-full hover:bg-[#44c3ac]/90 transition-colors font-medium">Download</a>
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Electrical Safety in Your Home</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Safe use of electrical appliances and electrical systems in your home.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/electrical_safety_in_your_home.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/electrical_safety_in_your_home.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Gas Safety Guidance for Vert Housing Tenants preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/gas_safety_guidance_for_vert_housing_tenants.webp"/>
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Gas Safety Guidance for Vert Housing Tenants</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Important gas safety information and emergency procedures.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/gas_safety_guidance_for_vert_housing_tenants.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/gas_safety_guidance_for_vert_housing_tenants.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Living with a disability preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/living_with_a_disability.webp"/>
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Living with a disability</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Living with a disability and how to support yourself.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/living_with_a_disability.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/living_with_a_disability.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Descaling Taps and Shower Heads preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/descaling_taps_and_shower_heads.webp"/>
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Descaling Taps and Shower Heads</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">Step-by-step guide to descaling and maintaining your taps and shower heads.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/descaling_taps_and_shower_heads.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/descaling_taps_and_shower_heads.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-lg text-card-foreground group bg-white border-0 shadow-sm transition-all duration-300 overflow-hidden">
+<div class="p-0">
+<div class="relative h-64 sm:h-72 bg-gray-100 overflow-hidden">
+<img alt="Understanding Condensation and Black Mould preview" class="w-full h-full object-cover" src="https://vert-storage.fastautoai.com/thumbnails/understanding_condensation_and_black_mould.webp"/>
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#44c3ac] transition-colors duration-200 leading-tight">Understanding Condensation and Black Mould</h3>
+<p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 line-clamp-2">How to prevent and deal with condensation and black mould in your home.</p>
+<div class="space-y-2">
+<a href="https://vert-storage.fastautoai.com/booklets/understanding_condensation_and_black_mould.pdf" target="_blank" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg><span>View Full PDF</span></a>
+<a href="https://vert-storage.fastautoai.com/booklets/understanding_condensation_and_black_mould.pdf" download="" class="w-full bg-[#44c3ac] hover:bg-[#44c3ac]/90 text-white px-4 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium transition-all duration-200 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:scale-110 transition-transform duration-200"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span>Download</span></a>
+</div>
 </div>
 </div>
 </div>
@@ -780,7 +682,7 @@ Empowering Living for Adults with Autism and Learning Disabilities We are a non-
 <div class="text-center mb-12 sm:mb-16">
 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Contact Us</h2>
 <div class="w-16 sm:w-20 md:w-24 h-1 bg-[#44c3ac] mx-auto mb-4 sm:mb-6"></div>
-<p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">We'd love to hear from you! For answers to all your questions or to set up a visit, get in touch with us today.</p>
+<p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto px-4">We'd love to hear from you! For answers to all your questions or to set up a visit, get in touch with us today.</p>
 </div>
 <div class="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
 <div class="space-y-6 sm:space-y-8">
@@ -788,24 +690,24 @@ Empowering Living for Adults with Autism and Learning Disabilities We are a non-
 <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Get in Touch</h3>
 <div class="space-y-4 sm:space-y-6">
 <div class="flex items-start space-x-3 sm:space-x-4">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#44c3ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-5 w-5 sm:h-6 sm:w-6 text-[#44c3ac] mt-1 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
 <div>
-<h4 class="font-semibold text-gray-900 mb-1">Address</h4>
+<h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Address</h4>
 <p class="text-gray-600 text-sm sm:text-base">Unit 1a Bakewell Court<br/>Loughborough, LE11 5QY<br/>England - United Kingdom</p>
 </div>
 </div>
 <div class="flex items-start space-x-3 sm:space-x-4">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#44c3ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 sm:h-6 sm:w-6 text-[#44c3ac] mt-1 flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 <div>
-<h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
-<a href="tel:03301333072" class="text-gray-600 text-sm sm:text-base hover:text-[#44c3ac] transition-colors">0330 133 3072</a>
+<h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Phone</h4>
+<p class="text-gray-600 text-sm sm:text-base"><a href="tel:03301333072" class="hover:text-[#44c3ac] transition-colors">0330 133 3072</a></p>
 </div>
 </div>
 <div class="flex items-start space-x-3 sm:space-x-4">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#44c3ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5 sm:h-6 sm:w-6 text-[#44c3ac] mt-1 flex-shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
 <div>
-<h4 class="font-semibold text-gray-900 mb-1">Email</h4>
-<a href="mailto:info@verthousing.co.uk" class="text-gray-600 text-sm sm:text-base hover:text-[#44c3ac] transition-colors">info@verthousing.co.uk</a>
+<h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Email</h4>
+<p class="text-gray-600 text-sm sm:text-base"><a href="mailto:info@verthousing.co.uk" class="hover:text-[#44c3ac] transition-colors">info@verthousing.co.uk</a></p>
 </div>
 </div>
 </div>
@@ -890,23 +792,25 @@ Empowering Living for Adults with Autism and Learning Disabilities We are a non-
 
 </div>
 
-<!-- VIDEO MODAL -->
-<div id="videoModal" class="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center hidden" onclick="closeVideo()">
-<div class="relative w-full max-w-4xl mx-4" onclick="event.stopPropagation()">
-<button onclick="closeVideo()" class="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
-</button>
-<div class="aspect-video bg-black rounded-lg overflow-hidden">
-<iframe id="videoIframe" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-
 <script>
 function toggleMobileMenu(){document.getElementById('mobileMenu').classList.toggle('hidden')}
-function openVideo(id){document.getElementById('videoIframe').src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';document.getElementById('videoModal').classList.remove('hidden');document.body.style.overflow='hidden'}
-function closeVideo(){document.getElementById('videoIframe').src='';document.getElementById('videoModal').classList.add('hidden');document.body.style.overflow=''}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideo()});
+
+function getEmbedUrl(url){
+  var m=url.match(/(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/|youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/);
+  return m?'https://www.youtube.com/embed/'+m[1]+'?autoplay=1&rel=0':url;
+}
+
+function playVideo(el,url){
+  var iframe=document.createElement('iframe');
+  iframe.src=getEmbedUrl(url);
+  iframe.className='w-full h-full';
+  iframe.setAttribute('frameborder','0');
+  iframe.setAttribute('allow','accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture');
+  iframe.setAttribute('allowfullscreen','');
+  var container=el.querySelector('.aspect-video');
+  container.innerHTML='';
+  container.appendChild(iframe);
+}
 
 // Hero slider
 var hi=0, hs=[document.getElementById('heroSlide0'),document.getElementById('heroSlide1'),document.getElementById('heroSlide2')];
@@ -914,6 +818,52 @@ if(hs[0]){setInterval(function(){hs[hi].classList.remove('opacity-100');hs[hi].c
 
 // Contact form
 function handleSubmit(e){e.preventDefault();var s=document.getElementById('formStatus'),f=document.getElementById('contactForm'),b=f.querySelector('button[type="submit"]'),t=b.textContent;b.textContent='Sending...';b.disabled=true;var d={name:document.getElementById('name').value,email:document.getElementById('email').value,phone:document.getElementById('phone').value,message:document.getElementById('message').value};fetch('https://formsubmit.co/ajax/info@verthousing.co.uk',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)}).then(function(r){if(r.ok){s.className='text-sm text-center text-green-500';s.textContent='Thank you! Your message has been sent successfully.';f.reset()}else throw Error()}).catch(function(){s.className='text-sm text-center text-red-500';s.textContent='There was an error. Please email us at info@verthousing.co.uk'}).finally(function(){s.classList.remove('hidden');b.textContent=t;b.disabled=false});return false}
+
+// YouTube video loader - scrapes production site for videos
+var defaultVideos=[
+{id:"1",title:"Welcome to Vert Housing",thumbnail:"https://img.youtube.com/vi/76WFx02v4AM/maxresdefault.jpg",url:"https://youtube.com/shorts/76WFx02v4AM?feature=share"},
+{id:"2",title:"Our Support Services",thumbnail:"https://img.youtube.com/vi/PxhQmayBbLg/maxresdefault.jpg",url:"https://youtube.com/shorts/PxhQmayBbLg?feature=share"},
+{id:"3",title:"Community Living",thumbnail:"https://img.youtube.com/vi/v_VlLIKfTuQ/maxresdefault.jpg",url:"https://youtube.com/shorts/v_VlLIKfTuQ?feature=share"},
+{id:"4",title:"Making a Difference",thumbnail:"https://img.youtube.com/vi/INbIuPfttYY/maxresdefault.jpg",url:"https://youtube.com/shorts/INbIuPfttYY?feature=share"},
+{id:"5",title:"Our Facilities",thumbnail:"https://img.youtube.com/vi/_Z1VHyeI_rU/maxresdefault.jpg",url:"https://youtube.com/shorts/_Z1VHyeI_rU?feature=share"},
+{id:"6",title:"Resident Stories",thumbnail:"https://img.youtube.com/vi/WgYDvQFAwLo/maxresdefault.jpg",url:"https://youtube.com/shorts/WgYDvQFAwLo?feature=share"},
+{id:"7",title:"Support & Care",thumbnail:"https://img.youtube.com/vi/65vKsEbMLpc/maxresdefault.jpg",url:"https://youtube.com/shorts/65vKsEbMLpc?feature=share"},
+{id:"8",title:"Vert Housing Overview",thumbnail:"https://img.youtube.com/vi/Yo7xPnN42Ao/maxresdefault.jpg",url:"https://youtu.be/Yo7xPnN42Ao"},
+{id:"9",title:"Our Mission",thumbnail:"https://img.youtube.com/vi/bGu5OOfbbqw/maxresdefault.jpg",url:"https://youtu.be/bGu5OOfbbqw"}
+];
+
+function renderVideos(videos){
+  var g=document.getElementById('youtubeGrid');if(!g||!videos.length)return;
+  g.innerHTML=videos.map(function(r,i){
+    var cls='relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300'+(i===videos.length-1?' sm:col-span-2':'');
+    return '<div class="'+cls+'"><div class="relative cursor-pointer" onclick="playVideo(this.parentElement,\''+r.url+'\')"><div class="aspect-video w-full bg-gray-100"><img src="'+r.thumbnail+'" alt="'+r.title+'" class="w-full h-full object-cover"/><div class="absolute inset-0 flex items-center justify-center" style="background-color:rgba(0,0,0,0.4);transition:background-color .3s" onmouseenter="this.style.backgroundColor=\'rgba(0,0,0,0.5)\'" onmouseleave="this.style.backgroundColor=\'rgba(0,0,0,0.4)\'"><div class="bg-white/90 rounded-full p-4 transform group-hover:scale-110 transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#44c3ac" stroke="#44c3ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div></div></div><div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4"><h3 class="text-white font-semibold text-base sm:text-lg">'+r.title+'</h3></div></div></div>'
+  }).join('');
+}
+
+function loadYouTubeVideos(){
+  renderVideos(defaultVideos);
+  var proxies=[
+    function(u){return'https://api.allorigins.win/raw?url='+encodeURIComponent(u)},
+    function(u){return'https://corsproxy.io/?'+encodeURIComponent(u)}
+  ];
+  function tryFetch(i){
+    if(i>=proxies.length)return;
+    fetch(proxies[i]('https://www.verthousing.co.uk/')).then(function(r){
+      if(!r.ok)throw Error();return r.text();
+    }).then(function(html){
+      var ids=[],seen={},m,re=/id:\"(\d+)\",title:\"([^\"]+)\",thumbnail:\"([^\"]+)\",url:\"([^\"]+)\"/g;
+      while((m=re.exec(html))!==null){
+        if(!seen[m[1]]){seen[m[1]]=true;ids.push({id:m[1],title:m[2],thumbnail:m[3],url:m[4]})}
+      }
+      if(ids.length>0){
+        defaultVideos=ids;
+        renderVideos(defaultVideos);
+      }
+    }).catch(function(){tryFetch(i+1)});
+  }
+  tryFetch(0);
+}
+loadYouTubeVideos();
 </script>
 
 </body>
